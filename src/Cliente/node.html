@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NODE</title>
+    <script src="cliente.js"></script>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0px;
+        background-color: crimson;
+    }
+    .contedio{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .boton{
+        width: 66em;
+        height: 2em;
+        text-align: center;
+        border: 2px solid rgb(63, 29, 29);
+        background-color: rgb(173, 140, 204);
+        color: black;
+        cursor: pointer;
+        transition-duration: 1s;
+        margin-top: 1em;
+    }
+    .boton:hover {
+        background-color: rgb(65, 12, 57);
+        color: white;
+        border-color: black;
+    }
+</style>
+<body>
+    <div class="contenido">
+        <form action="" id="formu" name="formulario">
+            Dime el ID del usuario : <input id="id_usu" type="text" name="id">
+            <input type="button" class="boton" onclick="info()" value="Obtener datos">
+        </form>
+
+        <div class="info">
+
+        </div>
+    </div>
+</body>
+</html>
